@@ -4,13 +4,13 @@
 read -r -p "请输入 BASE_URL(如: https://seafile.com): " BASE_URL
 AUTH_URL="${BASE_URL}/api2/auth-token/"
 
-echo "BASE_URL = ${BASE_URL}"
-echo "AUTH_URL = ${AUTH_URL}"
-
 # 交互式输入账号和密码
 read -r -p "请输入账号 (邮箱/用户名): " USERNAME
 read -r -s -p "请输入密码: " PASSWORD
 echo ""  # 换行
+
+echo "BASE_URL = ${BASE_URL}"
+echo "AUTH_URL = ${AUTH_URL}"
 
 echo "正在请求 token ..."
 
